@@ -1,0 +1,29 @@
+{
+  "name": "mfe-feature-flags-infrastructure",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "deploy:staging": "ENVIRONMENT=staging cdk deploy --require-approval never",
+    "deploy:production": "ENVIRONMENT=production cdk deploy",
+    "diff": "cdk diff",
+    "synth": "cdk synth",
+    "destroy:staging": "ENVIRONMENT=staging cdk destroy"
+  },
+  "dependencies": {
+    "@aws-sdk/client-appconfig": "^3.540.0",
+    "@aws-sdk/client-cloudfront-keyvaluestore": "^3.540.0",
+    "aws-cdk-lib": "^2.140.0",
+    "constructs": "^10.3.0",
+    "source-map-support": "^0.5.21"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.136",
+    "@types/node": "^20.11.0",
+    "aws-cdk": "^2.140.0",
+    "esbuild": "^0.20.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
