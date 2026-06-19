@@ -53,7 +53,7 @@ Si la cuenta nunca ha usado CDK, ejecutar primero:
 ```bash
 cdk bootstrap aws://<ACCOUNT_ID>/<REGION>
 # Ejemplo:
-cdk bootstrap aws://981644876886/us-east-1
+cdk bootstrap aws://452644825489/us-east-1
 ```
 
 ### 2. Desplegar todos los stacks
@@ -63,7 +63,7 @@ cdk bootstrap aws://981644876886/us-east-1
 npm run deploy:staging
 
 # Si se quiere pasar la región/cuenta explícitamente:
-CDK_DEFAULT_ACCOUNT=981644876886 CDK_DEFAULT_REGION=us-east-1 npm run deploy:staging
+CDK_DEFAULT_ACCOUNT=452644825489 CDK_DEFAULT_REGION=us-east-1 npm run deploy:staging
 ```
 
 Esto equivale a ejecutar `cdk deploy --all --require-approval never` con `ENVIRONMENT=staging`.
